@@ -1,0 +1,306 @@
+
+
+p{
+
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+body{
+  font-family: Roboto,arial;
+  margin:0px;
+padding-top: 80px;
+padding-left:96px ;
+padding-right: 24px;
+background-color: rgb(248,248,248 );}
+
+.image1{
+width: 100%;
+border-radius: 8px;;
+}
+
+.profile1{
+width: 36px;
+object-fit:contain;
+border-radius: 18px;
+margin-right: 10px;
+margin-top:10px;
+cursor: pointer;
+}
+.kota{
+margin-top: 10px;
+font-weight: 500;
+line-height: 20px;
+font-size: 14px;
+margin-bottom: 8px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.views, .net{
+font-size: 12px;
+color:rgb(96 96 96);
+margin-bottom: 10px;
+}
+.net{
+margin-bottom: 4px;
+
+}
+.vid{
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width:750px){
+  .vid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width:751px)and(max-width:999px){
+  .vid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width:1000px){
+  .vid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.video{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.time{
+  position: absolute;
+  background-color: black;
+  color: white;
+  bottom: 8px;
+  right:5px;
+  font-weight: 500;
+  font-size: 12px;
+  padding-left:4px ;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+}
+.image9{
+  position: relative;
+}
+.notify{
+  position: absolute;
+  top:-2px;
+  right: -5px;
+  background-color: rgb(200,0,0);
+  color: white;
+  font-size:11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px ;
+  border-radius: 10px;
+}
+.container{
+position: relative;
+}
+.profile6{
+  
+position: relative;
+display: inline-block;
+}
+.channelpic{
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+.channeltool{
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  width: 200px;
+  padding: 12px 12px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  position: absolute;
+  top: 55px;
+  z-index: 300;
+  opacity: 0;
+  pointer-events: none;
+  align-items: center;
+  transition: opacity 0.15s;
+
+}
+
+.profile6:hover .channeltool{
+  opacity: 1;
+}
+.channelname{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sidebar{
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 74px;
+  top:55px ;
+  z-index: 200; 
+  padding-top: 5px;
+}
+.sidebarside{
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  
+}
+.sidebarside:hover{
+  background-color: rgb(235,235,235);
+}
+.sidebarside img{
+  height: 24px 
+}
+.sidebarside div{
+font-size: 12px;
+margin-bottom: 4px;
+ 
+}
+
+.head{
+  display: flex;
+  flex-direction:row;
+  height: 55px;
+  justify-content: space-between;
+  position:fixed;
+  background-color: white;
+  top:0px;
+  left: 0px;
+  right: 0px;
+  border-bottom-style: solid ;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(228,228,228);
+  z-index: 100;
+}
+
+.left{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.menu{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.icon{
+  height: 20px;
+}
+.mid{ 
+  flex:1;
+  margin-left: 70px;
+  margin-right: 35px;
+ max-width: 500px;
+ align-items: center;
+ display: flex;
+ cursor: pointer;
+}
+.searchbox{
+  height: 36px;
+  flex:1;
+  width: 0;
+  padding-left: 10px;
+  font-size: 16px;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(192 192 192);
+border-radius: 2px;
+box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+.search{
+  height: 40px;
+  width: 66px;
+  border-style: solid;
+  border-width: 1px;
+  margin-left: -1;
+  border-color: rgb(192 192 192);;
+  background-color: rgb(245, 245, 245);
+  margin-right:9px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.search .search2 , .mic .search2,.upload1 .search2, .profile .search2{
+position:absolute;
+background-color: gray;
+color: white;
+padding-left: 8px;
+padding-right: 8px;
+padding-top: 4px;
+padding-bottom: 4px;
+border-radius: 2px;
+font-size: 12px;
+bottom: -30px;
+opacity: 0;
+transition: opacity 0.15s;
+pointer-events: none;
+white-space:nowrap;
+}
+.search:hover .search2, .mic:hover .search2, .upload1:hover .search2, .profile:hover .search2{
+  opacity:1;
+}
+.searchbox::placeholder{
+  font-size: 16px;
+}
+.search-icon{
+  height: 25px;
+
+}
+.search,.mic,.upload1{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.mic{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border:none;
+  background-color: rgb(248, 248, 248);
+  cursor: pointer;
+}
+
+
+.imgs{
+  margin-top: 5px;
+  height: 24px;
+}
+.right{
+  width:150px;
+  margin-right: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.upload{
+  height: 24px;
+}
+.bell{
+  height: 24px;
+}
+.profile{
+  height: 32px;
+  border-radius: 16px;
+}
+ 
